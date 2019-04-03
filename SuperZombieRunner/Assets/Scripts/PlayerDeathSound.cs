@@ -26,7 +26,7 @@ public class PlayerDeathSound : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.anyKeyDown)
         {
             jumpSource.clip = jump;
             jumpSource.Play();
@@ -35,7 +35,7 @@ public class PlayerDeathSound : MonoBehaviour
             //if(GetComponent<DestroyOffscreen>().offset < 30)
             //audioSource.Play();
         }
-            //if (GetComponent<GameManager>().OnPlayerKilled() == true)
+            //if (GetComponent<DestroyOffscreen>())
             //{
             //    deathSource.clip = playerDeath;
             //    deathSource.Play();

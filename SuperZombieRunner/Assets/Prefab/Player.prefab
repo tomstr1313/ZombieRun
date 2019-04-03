@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 4097040468698483947}
   - component: {fileID: 1304789956858830395}
   - component: {fileID: 8108719499210862758}
-  - component: {fileID: 3651801573020982843}
+  - component: {fileID: 127435142977486782}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -337,7 +337,7 @@ MonoBehaviour:
   playerDeath: {fileID: 8300000, guid: 1b28e0700116b4d379c473fdf3ccc133, type: 3}
   jumpSource: {fileID: 1304789956858830395}
   deathSource: {fileID: 1304789956858830395}
---- !u!114 &3651801573020982843
+--- !u!114 &127435142977486782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a6442e7a5744d9186ef260b6be369a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5143225961428772310, guid: 93bfa64d240844031bd5a36c42d97884,
+  projectile: {fileID: 626602550593045091, guid: 1f710281c387943d9a7f11e424884cc2,
     type: 3}
-  fireDelta: 0.5
+  fireDelta: 1
   damage: 100

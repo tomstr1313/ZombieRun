@@ -204,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   continueText: {fileID: 1836373409}
   scoreText: {fileID: 941978007}
-  playerPrefab: {fileID: 1947962715570691674, guid: ff02d5a41cf7237488a5493f57dcde66,
+  playerPrefab: {fileID: 3833132771085956889, guid: 319a30d3f73dd4d92934cf2a88e94bc6,
     type: 3}
 --- !u!4 &364101172
 Transform:

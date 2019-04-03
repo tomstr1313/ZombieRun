@@ -6,6 +6,7 @@ public class WeaponFire : MonoBehaviour
 {
     public GameObject projectile;
     public float fireDelta = 0.5F;
+    public float offset = 2.0f;
 
     private float nextFire = 0.5F;
     private GameObject newProjectile;
@@ -26,10 +27,11 @@ public class WeaponFire : MonoBehaviour
             nextFire = nextFire - myTime;
             myTime = 0.0F;
 
-            RaycastHit hit;
-            Ray ray = new Ray(transform.position, transform.right);
+            RaycastHit2D hit;
+            Ray2D ray = new Ray2D(transform.position, transform.right);
             if(Physics.Raycast(ray,out hit, 100f)) {
                 hit.transform.GetComponent<HealthScript>().RemoveHealth(damage);
+                Debug.Log("Health taken");
             }
 
 

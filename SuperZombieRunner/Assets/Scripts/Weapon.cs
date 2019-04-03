@@ -19,7 +19,7 @@ public class Weapon : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        firePoint = transform.FindChild("FirePoint");
+        firePoint = transform.FindChild("Player");
         if (firePoint == null)
         {
             Debug.LogError("No firePoint? WHAT?!");
@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour
     {
         if (fireRate == 0)
         {
-            if (Input.GetButtonDown(KeyCode.F))
+            if (Input.GetButtonDown("Fire1"))
             {
                 Shoot();
             }

@@ -22,7 +22,8 @@ public class InputState : MonoBehaviour
     void Update()
     {
         //check if any button is pressed for action
-        actionButton = Input.GetKeyDown(KeyCode.Space);   
+        actionButton = Input.anyKeyDown;
+         
     }
     void FixedUpdate()
     {
